@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>M5stack</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+<h2>ボタン操作で水を制御する</h2>
+    <h3>2020.10.1</h3>
+
+<p>作ったモーターの制御部分をスイッチでもオンオフできるようにします。
+<br>
+新たにスイッチを購入しなくてもM5stackはボタンが3つついているためこれを使用する。
+<br>
+イメージ どこかのボタンを押すと土壌の水分が関係なくオンになり、5秒で止まるようにしたい。
+<br>
+ネットでM5stackのボタンのプログラムを調べる。
+<br>
+調べると M5.BtnA M5.BtnB M5.BtnC というもので3つのボタンがいじれる。
+<br>
+プログラムにも押す 離す 長押し ダブルクリック など様々変更可能だった。
+<br>
+これらのプログラムを動かすためには、M5.update （）というものを書かないと動かないらしい。
+<br>
+
+実際に書いたのが <br>
+Void loop(){<br>
+ M5.update();<br>
+ 
+<br>
+if  (M5.BtnB.wasPressed () ) {<br>
+  degitalWrite(26,HIGH);<br>
+  delay (5000) ;<br>
+ }<br>
+
+だが、いま制御しているプログラムに書き込んでも他のプログラムが悪さをしているのかボタンを押しても動かなかった。
+    
+    新規のプログラムに書き込んでみると 動くが delay(5000) をかいてあっても 5秒で止まることがなかった。</p>
