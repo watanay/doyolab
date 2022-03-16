@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>7月進捗</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <!--ホームに帰るためのボタン-->
+    <logotohome>
+    <a href="index.html"><img src="images/watana.png" alt=""></a>
+    </logotohome>
+
+    <h1>7月活動</h1>
+        <h2>プランターの更新</h2>
+    <h3>6月の続き</h3>
+    <p>６月は土壌センサーがうまく動かず中途半端で終わってしまった。
+    <br>
+    7月はプランタの自動水やりを完成させるところまでいきたい。</p>
+    <h3>Arduino</h3>
+    <p>モイスチャーセンサーが数値変化することが分かった。
+    <br>
+    しかしどうやって自動水やりをする仕組みができるか正直わからない。プランターに水をためるタンクを設置しモーターで吸い上げるというやり方はすでにありそうなので、今までの知識を生かし、違うやり方でやりたいと思う。
+    <br>
+    Arduinoで学んだ知識はLチカ、光センサー、モーターくらいなのでどうにかそれを生かし水やり装置を作ることにする。
+    <h3>イメージ</h3>
+        <p>絵がわかりずらいですが<p><img src="images/ime-ji.jpg" alt="">
+            </p>
+    <p>プランターを積み上げ式にして上に水を貯水しておく仕組みにする。土壌センサーで土が乾いたらサーボモーターが作動するようにする。土が湿ったらサーボモータを停止させるプログラムを作る。<p><img src="images/plant2.png" alt=""><img src="images/plant3.png" alt=""></p>
+    <p>fusionでのイメージはこんな感じ
+    <br>上に水をため乾いたら上から水を落とす。
+    </p>
+    <h3>Arduinoプログラム</h3>
+    <p><img src="images/moistarduino.JPG" alt="">
+            </p>
+    <p>Aruduinoのプログラムに時間がかかった。分かる人が見たらぐちゃぐちゃなプログラムかもしれない。
+    <br>
+    新規にArduinoの勉強はしていないので再度、道用先生の<a href="https://fabble.cc/fablabhiratsuka/arduino">Arduinoを使ってみる</a>を参考に復習した。</p>
+    <h3>Arduino配線</h3>
+    <p><img src="images/haisen.jpg" alt=""></p>
+    <p>配線は製品のデータシートとArduinoを使ってみるを参考に配線をした。</p>
+    <h3>制作</h3>
+    <p>プログラム、配線共に動作することが分かったので発表までに物を作成する
+    <br>出来上がった後動画や画像を添付</p>
+    <h3>今後の制作</h3>
+    <p>水の自動やり機能が完成後、光の構造に移りたい。鳥居君の発表を聞き野菜を育てるには様々な光の色が関係していると分かった。</p>
+</body>
